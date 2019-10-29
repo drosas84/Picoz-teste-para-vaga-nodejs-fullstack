@@ -11,8 +11,9 @@ Atualmente nosso sistema está construído com Ruby on Rails e React. Mas estamo
 ## Sobre o processo seletivo
 1. Nessa primeira etapa queremos te conhecer um pouco mais, saber sobre projetos que já executou e fazer algumas perguntinhas técnicas.
 2. Teste técnico, não deve demorar mais do que 3 dias para você realizar esse teste.
-3. Proposta de contrato
-4. Contratação
+3. Devolutiva sobre o teste
+4. Proposta de contrato
+5. Contratação
 
 ## Sobre o teste
 ### Requisitos:
@@ -84,3 +85,5 @@ Possibilitar que o usuário cadastre, veja a lista de produtos e busque um produ
 ## Não obrigatórios
 - Busca com unbounce
 - Configurar os ambientes de desenvolvimento, homologação e produção
+
+# Bora codar!
