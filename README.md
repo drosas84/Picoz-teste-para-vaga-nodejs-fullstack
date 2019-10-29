@@ -29,16 +29,16 @@ O aplicativo deverá persistir dados, você pode usar qualquer banco de dados ou
 
 Todas as respostas de erro devem retornar o seguinte objeto:
 
-```
+```javascript
 { "erro": "mensagem de erro"}
 ```
 
 ### Criação de produto
 Este endpoint deverá receber um produto com os seguintes campos: nome, tipo, preço, lista de lojas.
 
-Modelo esperado:
+**Modelo esperado:**
 
-```
+```javascript
 { 
   "nome": "Fonte",
   "tipo": "Eletrônico",
@@ -54,4 +54,28 @@ Modelo esperado:
 
 - Utilizar os status codes
 - Em caso de sucesso irá retonar um usuário mais os seguintes campos:
-  - 
+  - `id` : id do produto (pode ser o gerado pelo banco ou um GUID)
+  - `createdAt` : data de criação do produto
+  - `updateAt` : data da última atualização do produto
+ - Caso o produto já exista, deverá retornar o erro com a mensagem "Produto já cadastrado"
+ 
+### Adicionar loja
+ - Este endpoint irá receber um objeto com `id`, `nome` e `bairro`
+ - Caso o id exista deve retornar o endpoint igual ao de criação de produto
+ - Não pode existir duas lojas com o mesmo nome no meso bairro.
+ 
+### Buscar produto
+- Organizar as rotas para que seja possível:
+  - Buscar todos os produtos
+  - Buscar produto por id
+  - Buscar produto por bairro
+  - Buscar produto por nome do produto
+  - Buscar produto por nome da loja
+  
+## Mini Front-end
+Possibilitar que o usuário cadastre, veja a lista de produtos e busque um produto.
+ 
+### Requisitos
+- Qualquer framework para Javascript
+- Separa por componentes
+- Testes unitários
