@@ -14,3 +14,44 @@ Atualmente nosso sistema está construído com Ruby on Rails e React. Mas estamo
 4. Contratação
 
 ## Sobre o teste
+### Requisitos:
+- Usar o Node.JS na última versão estável
+- Você pode utilizar o framework de sua preferência: Express, Hapi ou outros
+- Lint Aibnb Style Guide
+- API Restful
+
+Crie um aplicativo backend que exporta uma API RESTful de criação de produtos.
+
+Todos os endpoints devem somente aceitar e somente enviar JSONs.
+O servidor sempre deverá retornar JSON, quando o endpoint não puder ser encontrado.
+
+O aplicativo deverá persistir dados, você pode usar qualquer banco de dados ou ORM.
+
+Todas as respostas de erro devem retornar o seguinte objeto:
+
+```
+{ "erro": "mensagem de erro"}
+```
+
+### Criação de produto
+Este endpoint deverá receber um produto com os seguintes campos: nome, tipo, preço, lista de lojas.
+
+Modelo esperado:
+
+```
+{ 
+  "nome": "Fonte",
+  "tipo": "Eletrônico",
+  "preco": 10.40,
+  "lojas": [
+     {
+       "nome": "Picoz",
+       "bairro": "Pinheiros"
+     }
+  ]
+}
+```
+
+- Utilizar os status codes
+- Em caso de sucesso irá retonar um usuário mais os seguintes campos:
+  - 
