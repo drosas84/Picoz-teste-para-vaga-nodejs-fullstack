@@ -79,3 +79,7 @@ Possibilitar que o usuário cadastre, veja a lista de produtos e busque um produ
 - Qualquer framework para Javascript
 - Separa por componentes
 - Testes unitários
+
+## Não obrigatórios
+- Busca com unbounce
+- Configurar os ambientes de desenvolvimento, homologação e produtção
