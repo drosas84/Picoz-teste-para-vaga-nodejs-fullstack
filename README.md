@@ -82,4 +82,4 @@ Possibilitar que o usuário cadastre, veja a lista de produtos e busque um produ
 
 ## Não obrigatórios
 - Busca com unbounce
-- Configurar os ambientes de desenvolvimento, homologação e produtção
+- Configurar os ambientes de desenvolvimento, homologação e produção
